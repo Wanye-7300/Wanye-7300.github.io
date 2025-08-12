@@ -13,6 +13,30 @@ theme = 'hugo-theme-stack'
 [params]
   favicon = 'img/icon_small.png'
 
+  [[params.widgets.homepage]]
+  type = 'home'
+
+  [[params.widgets.homepage]]
+  type = 'search'
+
+  [[params.widgets.homepage]]
+  type = 'archives'
+    [params.widgets.homepage.params]
+    limit = 5
+  
+  [[params.widgets.homepage]]
+  type = 'categories'
+    [params.widgets.homepage.params]
+    limit = 10
+  
+  [[params.widgets.homepage]]
+  type = 'tag-cloud'
+    [params.widgets.homepage.params]
+    limit = 10
+  
+  [[params.widgets.page]]
+  type = 'toc'
+
   [params.footer]
   since = 2025
   customText = 'Learn from the past, live for today and hope for the <em>future</em>.'
@@ -31,3 +55,20 @@ theme = 'hugo-theme-stack'
     [params.article.license]
     enabled = true
     default = 'Licensed under CC BY-NC-SA 4.0'
+
+[menu]
+  [[menu.main]]
+    name = '主页'
+    url = '/'
+    weight = -2147483648
+    identifier = 'home'
+    [menu.main.params]
+        icon = 'home'
+        newTab = false
+  [[menu.social]]
+  identifier = 'github'
+  name = 'Github'
+  url = 'https://github.com/Wanye-7300/'
+  [menu.social.params]
+  icon = 'brand-github'
+  newtab = true
