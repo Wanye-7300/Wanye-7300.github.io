@@ -1,8 +1,33 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://blog.wanye7300.xyz/'
+languageCode = 'zh-cn'
+defaultContentLanguage = 'zh-cn'
+hasCJKLanguage = true
+title = "Wanye_7300's Site"
 theme = 'hugo-theme-stack'
 
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+
+
+[params]
+  favicon = 'img/icon_small.png'
+
+  [params.footer]
+  since = 2025
+  customText = 'Learn from the past, live for today and hope for the <em>future</em>.'
+
+  [params.sidebar]
+  emoji = '🍺'
+  subtitle = 'W A N Y E 7 3 0 0'
+    [params.sidebar.avatar]
+    src = 'img/icon_small.png'
+  
+  [params.article]
+  headingAnchor = false
+  math = true
+  toc = true
+  readingTime = true
+    [params.article.license]
+    enabled = true
+    default = 'Licensed under CC BY-NC-SA 4.0'
