@@ -37,8 +37,8 @@ params:
             default: Licensed under CC BY-NC-SA 4.0
 
     comments:
-        enabled: false
-        provider: disqus
+        enabled: true
+        provider: waline
 
         disqusjs:
             shortname:
@@ -73,9 +73,10 @@ params:
 
         # Waline client configuration see: https://waline.js.org/en/reference/client/props.html
         waline:
-            serverURL:
-            lang:
-            visitor:
+            serverURL: https://blog-comment.wanye7300.xyz/
+            lang: zh-CN
+            visitor: true
+            pageview: true
             avatar:
             emoji:
                 - https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo
@@ -83,7 +84,7 @@ params:
                 - nick
                 - mail
             locale:
-                admin: Admin
+                admin: Wanye_7300
                 placeholder:
 
         twikoo:

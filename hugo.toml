@@ -55,17 +55,6 @@ theme = 'hugo-theme-stack'
     [params.article.license]
     enabled = true
     default = 'Licensed under CC BY-NC-SA 4.0'
-  
-  [params.comments]
-  enabled = true
-  provider = 'waline'
-    [param.comments.waline]
-    serverURL = 'https://blog-comment.wanye7300.xyz/'
-    lang = 'zh-CN'
-    emoji = ['https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo']
-    requiredMeta = ['nick', 'mail']
-      [param.comments.waline.locale]
-      admin = 'Wanye_7300'
 
 [menu]
   [[menu.main]]
